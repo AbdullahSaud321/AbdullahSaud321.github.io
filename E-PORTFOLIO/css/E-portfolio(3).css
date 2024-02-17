@@ -1,0 +1,12 @@
+td a.nodec{
+    text-decoration:none;
+    color: #FF7F50;
+}  
+td a:hover{
+    text-decoration: underline;
+    color: beige;
+}
+
+nav a:hover{
+    background-color:lightblue;
+}
