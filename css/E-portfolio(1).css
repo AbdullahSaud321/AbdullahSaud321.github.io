@@ -1,0 +1,110 @@
+@media all{
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: #FF7F50;
+        text-align:left;
+        margin-top: 2em;
+    }
+
+.intro{
+    color: lightblue;
+    margin-top: -1em;
+    margin-right: 1em;
+    font-size: large;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div.floated{
+    padding:.2em;
+    margin-left:.5em;
+    float:left;
+    width:auto
+}
+
+body {
+    background: darkslategray
+    
+}
+
+  .sliding-content {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+nav{
+    display:flex;
+    justify-content: center;
+}
+
+nav a{
+    color:#FF7F50;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav a:hover{
+    background-color:lightblue;
+}
+
+nav p{
+    font-weight: bold;
+}
+
+.current {
+    background-color: lightblue;
+  }
+
+
+.copy{
+    font-weight:800;
+    opacity:0 ;
+    animation: fadeInAnimation 2s ease-in-out  forwards;
+    margin-top: 20%;
+    margin-left:-30em ;
+    text-align: center;
+}
+
+
+@keyframes fadeInAnimation {
+    from{
+        opacity:0 ;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.tablespecial{
+    text-align:center;
+    margin-top: -5em;
+}
+
+td img{
+    box-shadow: 10px 10px 10px #FF7F50;
+}
+
+div form{
+    margin-top: -10em;
+}
+
+}
